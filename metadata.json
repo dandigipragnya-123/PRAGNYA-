@@ -1,0 +1,6 @@
+{
+  "name": "NagrikAI – Karnataka Citizen Assistance",
+  "description": "AI-powered multilingual citizen assistance platform for Karnataka: understand land records, check welfare schemes, and access verified government portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1284 @@
+# PROJECT: NAGRIKAI – KARNATAKA'S AI-POWERED CITIZEN ASSISTANCE PLATFORM
+
+## ROLE
+
+Act as a senior full-stack developer, software architect, AI engineer, database engineer, UI/UX designer and QA engineer.
+
+Your task is to inspect, improve, debug and complete my existing NagrikAI project into a fully functional Karnataka-focused citizen assistance web application.
+
+IMPORTANT: This is an existing project. Do not blindly rebuild everything from scratch.
+
+First inspect the existing source code, identify the current functionality, understand the architecture and fix existing problems.
+
+Preserve all working features and improve the existing implementation.
+
+This is a working MVP, not a static prototype or design demonstration.
+
+---
+
+# 1. PROJECT VISION
+
+NagrikAI is an AI-powered multilingual citizen assistance platform focused exclusively on Karnataka, India.
+
+Its objective is to help ordinary citizens understand government documents and discover relevant government welfare schemes without depending on intermediaries.
+
+Citizens often struggle with:
+
+- Understanding government documents.
+- Understanding Kannada and English administrative terminology.
+- Finding relevant Karnataka government schemes.
+- Understanding eligibility requirements.
+- Identifying important deadlines.
+- Knowing which government department handles a service.
+- Finding the correct official portal.
+- Understanding what action they must take next.
+
+NagrikAI bridges this gap using AI, OCR, document processing, structured government information and multilingual assistance.
+
+The platform must have TWO PRIMARY MODULES:
+
+1. DOCUMENT ASSISTANCE.
+2. KARNATAKA GOVERNMENT SCHEME ELIGIBILITY CHECKER.
+
+The platform must provide accurate, understandable and source-backed information.
+
+Do not expand the MVP into a nationwide government platform.
+
+All initial scheme data, service information, examples and verification guidance must be relevant to Karnataka.
+
+---
+
+# 2. TECHNOLOGY STACK
+
+Follow the existing architecture wherever it is already working.
+
+Preferred stack:
+
+FRONTEND:
+- HTML
+- CSS
+- JavaScript
+- Tailwind CSS.
+
+BACKEND:
+- Python
+- FastAPI
+- REST APIs.
+
+AI:
+- Gemini API as the primary LLM.
+- Keep AI integration modular for future provider changes.
+
+OCR:
+- Tesseract OCR.
+- Optional Google Cloud Vision integration.
+
+PDF PROCESSING:
+- PyMuPDF.
+
+DATABASE:
+- MongoDB Atlas.
+- PyMongo or Motor, using one consistent database approach.
+
+AUTHENTICATION:
+- JWT.
+- bcrypt password hashing.
+
+VOICE:
+- Web Speech API.
+
+TRANSLATION:
+- Google Translate API or an appropriate Indic-language translation provider.
+
+REMINDERS:
+- Backend scheduler.
+
+DEPLOYMENT:
+- Vercel frontend.
+- Render or Railway backend.
+- MongoDB Atlas database.
+
+VERSION CONTROL:
+- Git and GitHub.
+
+Do not introduce unnecessary technologies.
+
+Do not use Bootstrap and Tailwind together.
+
+Do not expose API keys in frontend code.
+
+Use environment variables.
+
+---
+
+# 3. KARNATAKA-ONLY OFFICIAL GOVERNMENT SOURCE REGISTRY
+
+THIS IS A CRITICAL REQUIREMENT.
+
+NagrikAI must use authentic Karnataka government sources.
+
+Create a central source registry in MongoDB.
+
+Use the following official portals as the initial source registry.
+
+## A. PRIMARY KARNATAKA GOVERNMENT PORTALS
+
+1. Government of Karnataka:
+https://www.karnataka.gov.in/
+
+2. Seva Sindhu:
+https://sevasindhu.karnataka.gov.in/
+
+3. Seva One / Namma Seve:
+https://sevaone.karnataka.gov.in/
+
+4. Karnataka State Scholarship Portal:
+https://ssp.karnataka.gov.in/
+
+5. Karnataka Bhoomi Land Records:
+https://landrecords.karnataka.gov.in/
+
+6. Kaveri:
+https://kaveri.karnataka.gov.in/
+
+7. e-Swathu:
+https://eswathu.karnataka.gov.in/
+
+8. FRUITS:
+https://fruits.karnataka.gov.in/
+
+9. Raita Mitra:
+https://raitamitra.karnataka.gov.in/
+
+10. Karnataka Revenue Department:
+https://revenue.karnataka.gov.in/
+
+11. Karnataka Department of Agriculture:
+https://raitamitra.karnataka.gov.in/
+
+12. Karnataka Social Welfare Department:
+https://swd.karnataka.gov.in/
+
+13. Karnataka Backward Classes Welfare Department:
+https://bcwd.karnataka.gov.in/
+
+14. Karnataka Department of Women and Child Development:
+https://dwcd.karnataka.gov.in/
+
+15. Karnataka Department of Medical Education:
+https://dme.karnataka.gov.in/
+
+16. Karnataka Department of Collegiate Education:
+https://dce.karnataka.gov.in/
+
+17. Karnataka Department of Public Instruction:
+https://schooleducation.karnataka.gov.in/
+
+18. Karnataka Department of Stamps and Registration:
+https://igr.karnataka.gov.in/
+
+19. Greater Bengaluru Authority:
+https://gba.karnataka.gov.in/
+
+20. Karnataka State Data Centre / NIC Karnataka information:
+https://karnataka.nic.in/
+
+21. FRUITS technical information from NIC:
+https://www.nic.gov.in/project/fruits/
+
+IMPORTANT:
+These are source discovery and reference portals, not a guarantee that every portal provides a public API.
+
+Before implementing a portal integration:
+- Check that the URL is currently accessible.
+- Confirm that it belongs to the relevant government department.
+- Identify what information it actually provides.
+- Confirm whether a public API exists.
+- Do not assume an API is available.
+- Do not invent an API endpoint.
+- Do not scrape restricted pages.
+- Do not bypass CAPTCHA or login restrictions.
+
+Some government service portals may change or be replaced. Verify the currently operational portal before presenting it as an active service.
+
+If a portal is unavailable, mark it unavailable and preserve its source record for administrator review.
+
+## B. GOVERNMENT SOURCE AUTHORITY
+
+Use the following priority:
+
+Priority 1:
+- Karnataka Government Orders.
+- Official department notifications.
+- Official scheme guidelines.
+- Official circulars.
+- Relevant Acts and Rules.
+- Official Gazette notifications.
+
+Priority 2:
+- Official Karnataka department websites.
+- Official citizen service portals.
+- Official government scheme portals.
+
+Priority 3:
+- NIC Karnataka documentation.
+- Karnataka district administration websites.
+- Other official government publications.
+
+Do not use random blogs, private consultancy websites, YouTube videos or generic AI answers as primary evidence.
+
+If two sources conflict, flag the discrepancy and require verification rather than inventing a resolution.
+
+## C. GOVERNMENT SOURCE DATABASE
+
+Create a MongoDB collection called government_sources.
+
+Each record must include:
+
+- source_id
+- source_name
+- department
+- source_type
+- official_url
+- supported_document_types
+- supported_scheme_ids
+- publication_date, if available
+- effective_date, if available
+- last_checked_at
+- last_verified_at
+- verification_status
+- notes
+
+Possible verification statuses:
+
+- Verified
+- Verification Due
+- Unavailable
+- Unverified
+- Review Required
+
+Only genuinely checked sources may be marked Verified.
+
+---
+
+# 4. APPLICATION FLOW
+
+Preserve the following exact user journey:
+
+LANDING PAGE
+→ SIGNUP / LOGIN
+→ DASHBOARD
+→ DOCUMENT ASSISTANCE OR SCHEME ELIGIBILITY
+→ RESULTS
+→ SAVE / HISTORY.
+
+Do not unnecessarily change the existing navigation.
+
+After successful login, redirect to the dashboard.
+
+The dashboard must display:
+
+- Document Assistance.
+- Karnataka Scheme Eligibility.
+- Recent documents.
+- Recent eligibility checks.
+- Notifications.
+- Language selection.
+- User profile.
+- Logout.
+
+Every button must perform its intended action.
+
+---
+
+# 5. AUTHENTICATION
+
+Implement real authentication.
+
+Signup fields:
+- Full name.
+- Email.
+- Password.
+- Confirm password.
+- Preferred language.
+
+Login:
+- Email.
+- Password.
+
+Requirements:
+
+- Validate inputs.
+- Check duplicate email addresses.
+- Hash passwords with bcrypt.
+- Generate JWT access tokens.
+- Protect private routes.
+- Verify JWT on protected requests.
+- Implement logout.
+- Restrict user-specific data access.
+- Handle expired tokens.
+- Never store plaintext passwords.
+
+Do not implement fake login functionality using frontend-only state.
+
+---
+
+# 6. DOCUMENT ASSISTANCE – KARNATAKA DOCUMENTS
+
+This is one of the most important features.
+
+Initially support the following document types:
+
+1. RTC / Pahani.
+2. Encumbrance Certificate.
+3. Khata Certificate.
+4. BBMP / GBA property notices.
+5. Rental Agreement.
+6. Income Certificate.
+7. Caste Certificate.
+
+Support:
+- PDF
+- JPG
+- JPEG
+- PNG
+
+## A. UPLOAD
+
+Implement:
+
+- Drag-and-drop upload.
+- File selection.
+- File type validation.
+- File size validation.
+- Unique document IDs.
+- Secure file storage.
+- User-specific document association.
+
+## B. TEXT EXTRACTION
+
+PDF:
+Use PyMuPDF to extract selectable text.
+
+If a PDF is scanned or has insufficient text:
+Use Tesseract OCR.
+
+Images:
+Use Tesseract OCR.
+
+If extraction fails:
+- Display an error.
+- Explain the reason where possible.
+- Allow the user to upload another file.
+- Never fabricate extracted content.
+
+## C. AI DOCUMENT ANALYSIS
+
+Send the actual extracted document text to Gemini.
+
+Identify:
+
+- Document type.
+- Issuing authority.
+- Document holder, if identifiable.
+- Important dates.
+- Expiry dates.
+- Reference numbers.
+- Financial amounts.
+- Relevant property or personal details.
+- Obligations.
+- Warnings.
+- Missing information.
+- Required actions.
+
+## D. SIMPLE EXPLANATION
+
+Display these sections:
+
+1. What is this document?
+2. Why is it important?
+3. Important details extracted.
+4. Important dates.
+5. What does the citizen need to do?
+6. Required supporting documents.
+7. Important warnings.
+8. Relevant Karnataka government department.
+9. Official verification portal.
+10. Sources used.
+
+Explain technical terms in simple English.
+
+Use Kannada or the user's selected language for the explanation.
+
+## E. DOCUMENT-SPECIFIC LOGIC
+
+RTC / Pahani:
+- Landowner information.
+- Survey number.
+- Land details.
+- Relevant entries.
+- Mutation information, if present.
+- Bhoomi verification guidance.
+
+Official source:
+https://landrecords.karnataka.gov.in/
+
+Encumbrance Certificate:
+- Relevant property information.
+- Search period.
+- Transactions appearing in the document.
+- Recorded encumbrances, if present.
+- Missing or unclear information.
+- Kaveri verification guidance.
+
+Official source:
+https://kaveri.karnataka.gov.in/
+
+Khata Certificate:
+- Property identification.
+- Khata holder.
+- Assessment or property details.
+- Issuing authority.
+- Relevant urban local body verification guidance.
+
+For rural property records:
+Use e-Swathu where relevant.
+
+Official source:
+https://eswathu.karnataka.gov.in/
+
+For urban property records:
+Use the applicable urban local body / GBA source.
+
+BBMP / GBA Notice:
+- Issuing authority.
+- Notice purpose.
+- Property reference.
+- Deadline.
+- Required action.
+- Consequences mentioned in the actual notice.
+
+Rental Agreement:
+- Landlord.
+- Tenant.
+- Rent.
+- Deposit.
+- Agreement period.
+- Termination conditions.
+- Obligations.
+
+Income and Caste Certificates:
+- Issuing authority.
+- Certificate holder.
+- Issue date.
+- Validity information, if explicitly stated.
+- Certificate reference.
+- Verification guidance through the relevant Karnataka government service.
+
+Do not assume that every document has an expiry date.
+
+Do not invent missing information.
+
+## F. DOCUMENT CONTEXT ISOLATION
+
+This is mandatory.
+
+Every uploaded document must have an independent analysis session.
+
+Implement:
+
+- Unique document ID.
+- Unique extraction record.
+- Unique analysis record.
+- Independent AI request context.
+- User-specific document history.
+
+Never reuse extracted text from a previous document.
+
+Never reuse an earlier AI response.
+
+Never combine documents unless the user explicitly asks for comparison.
+
+When a new document is uploaded, start a new analysis process.
+
+Ensure the result is based only on the current document and its authorized official reference information.
+
+## G. DOCUMENT VERIFICATION LIMITATIONS
+
+OCR does not authenticate a document.
+
+NagrikAI must distinguish:
+
+1. Text successfully extracted.
+2. Document explained by AI.
+3. Official portal provided for verification.
+4. Document authenticated through an authorized mechanism.
+
+Do not claim a document is genuine or government-approved unless an actual authorized verification mechanism confirms it.
+
+---
+
+# 7. KARNATAKA GOVERNMENT SCHEME ELIGIBILITY CHECKER
+
+This is the second primary feature.
+
+Do not build a generic India-wide scheme finder.
+
+Build a Karnataka-focused scheme discovery and eligibility system.
+
+## A. INITIAL SCHEME COVERAGE
+
+Start with a manageable, verified collection of schemes.
+
+Priority categories:
+
+1. Karnataka student scholarships.
+2. Karnataka farmer welfare schemes.
+3. Karnataka social welfare schemes.
+4. Karnataka backward classes welfare schemes.
+5. Karnataka women and child welfare schemes.
+6. Selected central schemes available to Karnataka residents, such as PM-KISAN.
+
+Initial source portals:
+
+Karnataka SSP:
+https://ssp.karnataka.gov.in/
+
+Karnataka Social Welfare Department:
+https://swd.karnataka.gov.in/
+
+Karnataka Backward Classes Welfare Department:
+https://bcwd.karnataka.gov.in/
+
+Karnataka Agriculture:
+https://raitamitra.karnataka.gov.in/
+
+FRUITS:
+https://fruits.karnataka.gov.in/
+
+Karnataka Women and Child Development:
+https://dwcd.karnataka.gov.in/
+
+PM-KISAN:
+https://pmkisan.gov.in/
+
+PM-KISAN must be clearly labelled as a central government scheme available to eligible Karnataka farmers, not as a Karnataka state scheme.
+
+Do not add large numbers of schemes using unverified information.
+
+Begin with a smaller number of fully documented schemes.
+
+If scheme-specific official rules cannot be obtained, do not activate that scheme in the eligibility engine.
+
+## B. USER INFORMATION FORM
+
+Collect only information required for relevant schemes.
+
+Possible fields:
+
+- Age.
+- State (Karnataka).
+- District.
+- Annual family income.
+- Occupation.
+- Student / employed / unemployed / farmer.
+- Education level.
+- Institution type, where relevant.
+- Category, only where required.
+- Gender, only where required.
+- Disability status, only where required.
+- Farmer registration information, where relevant.
+
+Make fields conditional.
+
+For example, do not ask a student for land ownership information unless a particular scheme requires it.
+
+Do not collect Aadhaar numbers, bank passwords, OTPs or other unnecessary sensitive identifiers.
+
+## C. SCHEME DATABASE
+
+Create a MongoDB collection called schemes.
+
+Every scheme must have:
+
+- scheme_id
+- scheme_name
+- scheme_category
+- implementing_department
+- state_or_central
+- description
+- benefits
+- eligibility_rules
+- exclusion_criteria
+- required_documents
+- application_process
+- application_url
+- official_guidelines_url
+- source_ids
+- publication_date
+- effective_date
+- last_verified_date
+- verification_status
+
+Only verified scheme records should be used for positive eligibility decisions.
+
+## D. RULE-BASED ELIGIBILITY ENGINE
+
+Implement eligibility evaluation in Python.
+
+Do not let Gemini decide eligibility independently.
+
+The backend must evaluate actual structured rules.
+
+Evaluate:
+
+- Age.
+- Income.
+- Location.
+- Education.
+- Occupation.
+- Category, if relevant.
+- Other mandatory conditions.
+
+Return one of four statuses:
+
+1. LIKELY ELIGIBLE.
+2. NOT ELIGIBLE.
+3. MORE INFORMATION REQUIRED.
+4. UNABLE TO VERIFY.
+
+Rules:
+
+- Missing mandatory information must not be treated as satisfied.
+- Unknown rules must not be treated as satisfied.
+- Unverified scheme conditions must not generate a positive eligibility claim.
+- Failed conditions must be clearly identified.
+- The engine must preserve the reason behind every decision.
+
+## E. GEMINI EXPLANATION
+
+Gemini may explain the eligibility result.
+
+It must receive:
+
+- Structured user inputs.
+- Actual scheme conditions.
+- Rule-engine result.
+- Official source references.
+
+It must not change the rule-engine result.
+
+For each scheme, display:
+
+- Scheme name.
+- Department.
+- Benefits.
+- Eligibility result.
+- Conditions satisfied.
+- Conditions not satisfied.
+- Missing information.
+- Required documents.
+- Application procedure.
+- Official application link.
+- Official guidelines link.
+- Last verified date.
+
+Always state that NagrikAI provides preliminary guidance, not official government approval.
+
+## F. SCHEME FILTERS
+
+Add:
+
+- Scholarships.
+- Farmer schemes.
+- Social welfare.
+- Women and child welfare.
+- Likely eligible.
+- Not eligible.
+- More information required.
+
+Do not display fake schemes or fake eligibility results.
+
+---
+
+# 8. SOURCE-GROUNDED AI AND KNOWLEDGE RETRIEVAL
+
+Build a lightweight, reliable retrieval system.
+
+For the MVP, do not attempt to scrape every Karnataka government website continuously.
+
+Use this practical approach:
+
+STEP 1:
+Create an administrator-controlled collection of official government PDFs, scheme guidelines, circulars and source links.
+
+STEP 2:
+Extract text from uploaded official documents using PyMuPDF.
+
+STEP 3:
+Clean and divide text into meaningful chunks.
+
+STEP 4:
+Generate embeddings.
+
+STEP 5:
+Store embeddings and source metadata using FAISS initially.
+
+STEP 6:
+Retrieve relevant official information when a user asks a question.
+
+STEP 7:
+Send the retrieved information to Gemini.
+
+STEP 8:
+Generate a simple explanation with source references.
+
+Each retrieved source must include:
+
+- Document or scheme title.
+- Department.
+- Official URL.
+- Page number or section, if available.
+- Last verified date.
+
+If the system cannot find supporting official information, it must say that it cannot verify the answer.
+
+Do not invent citations.
+
+Do not make unsupported legal claims.
+
+Use the rule-based engine for eligibility and RAG for explanations and supporting information.
+
+---
+
+# 9. GOVERNMENT SOURCE TRANSPARENCY
+
+Every important document analysis and scheme result must have a Sources section.
+
+Example:
+
+SOURCE INFORMATION
+
+Source name: Karnataka Bhoomi Land Records.
+
+Department: Revenue Department, Government of Karnataka.
+
+Official portal:
+https://landrecords.karnataka.gov.in/
+
+Source status: Based on actual source verification.
+
+Last checked: Actual backend timestamp.
+
+Provide clickable official links.
+
+Differentiate:
+
+- Source successfully checked.
+- Source available but not checked recently.
+- Source unavailable.
+- Information manually curated from an official document.
+
+Do not mark a source verified merely because its URL exists.
+
+Do not claim that the user's document was verified by the government unless the portal or an authorized API actually performed authentication.
+
+---
+
+# 10. MULTILINGUAL SUPPORT
+
+Support five languages:
+
+1. English.
+2. Kannada.
+3. Hindi.
+4. Telugu.
+5. Tamil.
+
+Karnataka MVP priority:
+
+English and Kannada must receive the highest testing priority.
+
+The interface must support language switching.
+
+Translate:
+
+- Dashboard.
+- Navigation.
+- Forms.
+- Buttons.
+- Error messages.
+- Document explanations.
+- Scheme information.
+- Notifications.
+
+Preserve:
+- Dates.
+- Financial amounts.
+- Document reference numbers.
+- Names.
+- Government URLs.
+
+If translation fails, show the original answer with an appropriate message.
+
+Do not silently replace important factual information during translation.
+
+---
+
+# 11. VOICE ASSISTANCE
+
+Use Web Speech API where supported.
+
+Implement:
+
+- Voice input.
+- Speech-to-text.
+- Text-to-speech.
+- Language selection.
+- Read-aloud document explanations.
+
+Prioritize Kannada and English testing.
+
+Provide a typed-input fallback if voice recognition does not support a selected language or browser.
+
+Voice functionality must not block the other modules.
+
+---
+
+# 12. REMINDERS AND NOTIFICATIONS
+
+Implement:
+
+- Extract important deadlines from documents.
+- Allow citizens to save dates.
+- Set reminders.
+- View upcoming deadlines.
+- Mark notifications as read.
+
+Use a backend scheduler.
+
+Do not claim that an SMS or email was delivered unless an actual notification provider is configured.
+
+---
+
+# 13. DATABASE STRUCTURE
+
+Use MongoDB collections:
+
+1. users
+2. documents
+3. document_analyses
+4. schemes
+5. eligibility_checks
+6. government_sources
+7. official_reference_documents
+8. notifications
+9. reminders
+
+Use unique IDs and timestamps.
+
+Ensure user-level data isolation.
+
+Keep uploaded files in secure file storage, not as unrestricted large database documents.
+
+Store only the relevant file metadata and secure file reference in MongoDB.
+
+---
+
+# 14. BACKEND API DESIGN
+
+Use FastAPI.
+
+Suggested routes:
+
+AUTHENTICATION:
+- POST /api/auth/register
+- POST /api/auth/login
+- GET /api/auth/me
+
+DOCUMENTS:
+- POST /api/documents/upload
+- GET /api/documents
+- GET /api/documents/{document_id}
+- GET /api/documents/{document_id}/analysis
+- DELETE /api/documents/{document_id}
+
+SCHEMES:
+- GET /api/schemes
+- GET /api/schemes/{scheme_id}
+- POST /api/eligibility/check
+- GET /api/eligibility/history
+
+SOURCES:
+- GET /api/sources
+- GET /api/sources/{source_id}
+
+NOTIFICATIONS:
+- GET /api/notifications
+- PATCH /api/notifications/{notification_id}/read
+
+REMINDERS:
+- POST /api/reminders
+- GET /api/reminders
+- DELETE /api/reminders/{reminder_id}
+
+Implement:
+
+- Pydantic validation.
+- HTTP status codes.
+- Authentication dependencies.
+- Exception handling.
+- CORS configuration.
+- API documentation through Swagger.
+- Proper database connection handling.
+
+Every frontend API call must connect to an actual backend endpoint.
+
+---
+
+# 15. UI/UX DESIGN
+
+Create a premium, trustworthy government-tech platform.
+
+Visual direction:
+
+- White background.
+- Deep navy blue.
+- Subtle teal accents.
+- Professional typography.
+- Soft shadows.
+- Rounded cards.
+- Consistent spacing.
+- Simple icons.
+- Minimal clutter.
+
+The platform should feel accessible to both urban and rural citizens.
+
+Required pages:
+
+1. Landing page.
+2. Login.
+3. Signup.
+4. Dashboard.
+5. Document Assistance.
+6. Document Analysis Results.
+7. Karnataka Scheme Eligibility Form.
+8. Scheme Results.
+9. Notifications.
+10. Document History.
+11. Profile.
+
+Add:
+
+- Loading states.
+- Empty states.
+- Error states.
+- Success states.
+- Responsive navigation.
+- Mobile support.
+- Clear form validation.
+
+Every interactive component must work.
+
+Do not build decorative buttons.
+
+---
+
+# 16. SECURITY AND PRIVACY
+
+Implement:
+
+- bcrypt password hashing.
+- JWT authentication.
+- Environment variables.
+- Secure file storage.
+- Input validation.
+- User-specific access control.
+- API protection.
+- File type validation.
+- File size limits.
+- Safe error messages.
+
+Uploaded documents must be treated as untrusted input.
+
+Never allow instructions embedded inside uploaded documents to override system instructions or expose secrets.
+
+Do not expose private user documents.
+
+Do not collect unnecessary Aadhaar or banking information.
+
+---
+
+# 17. ERROR HANDLING
+
+Handle:
+
+- Backend unavailable.
+- MongoDB connection failure.
+- Incorrect login.
+- Duplicate registration.
+- Expired JWT.
+- Invalid upload.
+- Corrupted PDF.
+- OCR failure.
+- Empty extracted text.
+- Gemini API failure.
+- API quota exceeded.
+- Missing API keys.
+- Translation failure.
+- Network failure.
+- Unsupported voice language.
+- Missing scheme data.
+- Unavailable government portal.
+
+For every error:
+
+1. Identify its source.
+2. Return an appropriate message.
+3. Log technical information securely.
+4. Preserve user data where possible.
+5. Provide retry functionality where appropriate.
+
+Never show fake success messages.
+
+---
+
+# 18. TESTING REQUIREMENTS
+
+Test the entire application.
+
+AUTHENTICATION:
+- Signup.
+- Login.
+- Invalid credentials.
+- Duplicate email.
+- Protected routes.
+
+DOCUMENT ASSISTANCE:
+- RTC PDF.
+- Scanned document.
+- Encumbrance Certificate.
+- Khata document.
+- Rental Agreement.
+- Invalid image.
+- Corrupted PDF.
+- Two consecutive document uploads.
+- Verify document context isolation.
+
+SCHEME ELIGIBILITY:
+- User meeting all mandatory conditions.
+- User failing income requirements.
+- User failing age requirements.
+- Missing mandatory information.
+- Unverified scheme information.
+- Karnataka versus non-Karnataka location conditions.
+
+SOURCES:
+- Verify official URLs.
+- Check source metadata.
+- Check last verified timestamps.
+- Test unavailable source handling.
+- Test source citations.
+- Ensure fabricated citations are impossible.
+
+MULTILINGUAL:
+- English.
+- Kannada.
+- Hindi.
+- Telugu.
+- Tamil.
+
+DATABASE:
+- Save and retrieve documents.
+- Save eligibility results.
+- Verify user isolation.
+
+Also test mobile responsiveness and browser console errors.
+
+Fix all discovered errors.
+
+---
+
+# 19. PROJECT STRUCTURE
+
+Maintain a modular project.
+
+nagrik-ai/
+|
+|-- frontend/
+|   |-- index.html
+|   |-- login.html
+|   |-- signup.html
+|   |-- dashboard.html
+|   |-- documents.html
+|   |-- schemes.html
+|   |-- results.html
+|   |-- css/
+|   |-- js/
+|   |-- assets/
+|
+|-- backend/
+|   |-- main.py
+|   |-- config.py
+|   |-- database.py
+|   |-- requirements.txt
+|   |-- routers/
+|   |-- models/
+|   |-- services/
+|   |-- utils/
+|   |-- tests/
+|
+|-- uploads/
+|-- .env.example
+|-- .gitignore
+|-- README.md
+
+Improve the structure where necessary without breaking the existing implementation.
+
+---
+
+# 20. DEVELOPMENT EXECUTION PLAN
+
+Work in the following order.
+
+PHASE 1: PROJECT AUDIT
+- Inspect existing files.
+- Identify broken integrations.
+- Check frontend and backend.
+- Identify missing dependencies.
+- Identify existing features that work.
+
+PHASE 2: BACKEND FOUNDATION
+- MongoDB connection.
+- Authentication.
+- User management.
+- Protected routes.
+
+PHASE 3: DOCUMENT ASSISTANCE
+- Upload.
+- PDF extraction.
+- OCR.
+- Gemini analysis.
+- Document-specific output.
+- Source references.
+- Document history.
+
+PHASE 4: KARNATAKA SCHEME ENGINE
+- Official scheme data.
+- Source registry.
+- Structured eligibility conditions.
+- Python rule-based matching.
+- Gemini explanations.
+- Scheme results.
+
+PHASE 5: MULTILINGUAL AND VOICE
+- English.
+- Kannada.
+- Hindi.
+- Telugu.
+- Tamil.
+- Voice features.
+
+PHASE 6: REMINDERS AND DASHBOARD
+- Deadline management.
+- Notifications.
+- History.
+- Profile.
+
+PHASE 7: TESTING
+- API testing.
+- Integration testing.
+- Functional testing.
+- Security testing.
+- Error handling.
+
+PHASE 8: DEPLOYMENT
+- Frontend on Vercel.
+- Backend on Render or Railway.
+- MongoDB Atlas.
+- Configure production environment variables.
+- Test the deployed application.
+
+Do not skip phases.
+
+Do not create all the frontend pages first and leave the backend incomplete.
+
+---
+
+# 21. MVP PRIORITY – DO NOT OVERBUILD
+
+The goal is a properly functioning Karnataka MVP.
+
+Prioritize these features:
+
+MUST WORK:
+1. Signup and login.
+2. Dashboard.
+3. PDF and image uploads.
+4. OCR and PDF extraction.
+5. Gemini document analysis.
+6. RTC / Pahani analysis.
+7. Encumbrance Certificate analysis.
+8. Khata analysis.
+9. Karnataka-specific scheme eligibility.
+10. Rule-based eligibility engine.
+11. Official government source links.
+12. English and Kannada support.
+13. Document history.
+14. Secure database integration.
+
+SECONDARY FEATURES:
+- Hindi, Telugu and Tamil.
+- Voice assistance.
+- Reminders.
+- Additional document types.
+- Additional schemes.
+- Administrator source management.
+
+Do not allow secondary features to compromise the reliability of the core modules.
+
+Do not create fake working features just to make the application look complete.
+
+If an external integration requires credentials, implement the correct integration structure and document the missing configuration.
+
+---
+
+# 22. FINAL DELIVERY
+
+Deliver:
+
+- Complete working frontend.
+- Complete FastAPI backend.
+- MongoDB integration.
+- Authentication.
+- Gemini integration.
+- PDF processing.
+- OCR.
+- Document-specific analysis.
+- Karnataka scheme eligibility engine.
+- Official government source registry.
+- Source-grounded AI responses.
+- Multilingual support.
+- Error handling.
+- README.
+- Requirements file.
+- Environment variable template.
+- API documentation.
+- Deployment instructions.
+- Test results.
+
+FINAL INSTRUCTION:
+
+Do not stop after generating the landing page.
+
+Do not stop after generating the dashboard.
+
+Do not claim a feature is functional just because its UI is visible.
+
+Verify the complete user journey.
+
+Do not fabricate scheme information, official sources, API responses, document analysis or eligibility decisions.
+
+Build NagrikAI as a reliable Karnataka-focused citizen assistance platform.
+
+The priority is a SMALL, ACCURATE, FULLY FUNCTIONAL MVP rather than a LARGE, INCOMPLETE APPLICATION.

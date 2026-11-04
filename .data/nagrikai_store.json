@@ -1,0 +1,1268 @@
+{
+  "users": [
+    {
+      "id": "user-default-citizen",
+      "fullName": "Poornima Moulya",
+      "email": "poornima.moulya15@gmail.com",
+      "preferredLanguage": "en",
+      "passwordHash": "$2b$10$bignr2r3D9XPJQsWVJt2gewDvfmiFm/JbkJQCti8ynqZGN.RqI736",
+      "createdAt": "2026-11-04T09:08:52.433Z"
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "doc-sample-1793783352414-gmkj",
+      "user_id": "user-default-citizen",
+      "file_name": "Karnataka Bhoomi RTC / Pahani (Form 16).txt",
+      "file_type": "txt",
+      "file_size": 1213,
+      "document_type_detected": "RTC / Pahani",
+      "extracted_text": "GOVERNMENT OF KARNATAKA - REVENUE DEPARTMENT\nBHOOMI ONLINE RTC / RECORD OF RIGHTS, TENANCY AND CROPS (FORM NO. 16)\nGenerated Online: 02/11/2026 11:24:18 AM\nDistrict: Bengaluru Rural | Taluk: Doddaballapura | Hobli: Kasaba | Village: Doddabelavangala\nSurvey Number: 42 | Hissa Number: 1B | Total Extent: 02-14-00 (2 Acres 14 Guntas)\nKharab Land: 00-02-00 (A-Kharab: 2 Guntas) | Net Cultivable Area: 02-12-00 (Dry Land / Kushki)\nSoil Assessment / Kandaya: Rs. 14.80 per annum\n\nCOLUMN 9 & 10 - OWNERSHIP DETAILS (ಖಾತೆದಾರರ ಮತ್ತು ಹಕ್ಕುಗಳ ವಿವರ):\nKhata Number: 1042\nOwner Name: ಶ್ರೀ ಬಸವರಾಜ ಗೌಡ (Basavaraj Gowda) bin late Channappa Gowda\nInheritance Mode: Mutation Register M.R. No. 14/2021-2022 (Vamsha Vruksha Partition)\nLiabilities / Encumbrance: Nil / No bank hypothecation registered in Bhoomi\n\nCOLUMN 11 & 12 - CROP DETAILS (ಬೆಳೆ ವಿವರ - ಮುಂಗಾರು ಹಂಗಾಮು 2026):\nCultivator: Owner Self-Cultivated (ಸ್ವಂತ ಸಾಗುವಳಿ)\nCrop: Ragi (ರಾಗಿ) - 1 Acre 20 Guntas; Tur Dal (ತೊಗರಿ) - 30 Guntas\nIrrigation Source: Rainfed (ಮಳೆಯಾಶ್ರಿತ)\nTree Count: 4 Coconut Palms, 2 Neem Trees\n\nNote: This computer-generated RTC is digitally signed and valid under Karnataka Land Revenue Act, 1964. Authenticate at https://landrecords.karnataka.gov.in/",
+      "uploaded_at": "2026-11-04T09:09:12.414Z",
+      "status": "extracted"
+    },
+    {
+      "document_id": "doc-sample-1793783357021-fdgy",
+      "user_id": "user-default-citizen",
+      "file_name": "Karnataka Bhoomi RTC / Pahani (Form 16).txt",
+      "file_type": "txt",
+      "file_size": 1213,
+      "document_type_detected": "RTC / Pahani (Record of Rights, Tenancy & Crops)",
+      "extracted_text": "GOVERNMENT OF KARNATAKA - REVENUE DEPARTMENT\nBHOOMI ONLINE RTC / RECORD OF RIGHTS, TENANCY AND CROPS (FORM NO. 16)\nGenerated Online: 02/11/2026 11:24:18 AM\nDistrict: Bengaluru Rural | Taluk: Doddaballapura | Hobli: Kasaba | Village: Doddabelavangala\nSurvey Number: 42 | Hissa Number: 1B | Total Extent: 02-14-00 (2 Acres 14 Guntas)\nKharab Land: 00-02-00 (A-Kharab: 2 Guntas) | Net Cultivable Area: 02-12-00 (Dry Land / Kushki)\nSoil Assessment / Kandaya: Rs. 14.80 per annum\n\nCOLUMN 9 & 10 - OWNERSHIP DETAILS (ಖಾತೆದಾರರ ಮತ್ತು ಹಕ್ಕುಗಳ ವಿವರ):\nKhata Number: 1042\nOwner Name: ಶ್ರೀ ಬಸವರಾಜ ಗೌಡ (Basavaraj Gowda) bin late Channappa Gowda\nInheritance Mode: Mutation Register M.R. No. 14/2021-2022 (Vamsha Vruksha Partition)\nLiabilities / Encumbrance: Nil / No bank hypothecation registered in Bhoomi\n\nCOLUMN 11 & 12 - CROP DETAILS (ಬೆಳೆ ವಿವರ - ಮುಂಗಾರು ಹಂಗಾಮು 2026):\nCultivator: Owner Self-Cultivated (ಸ್ವಂತ ಸಾಗುವಳಿ)\nCrop: Ragi (ರಾಗಿ) - 1 Acre 20 Guntas; Tur Dal (ತೊಗರಿ) - 30 Guntas\nIrrigation Source: Rainfed (ಮಳೆಯಾಶ್ರಿತ)\nTree Count: 4 Coconut Palms, 2 Neem Trees\n\nNote: This computer-generated RTC is digitally signed and valid under Karnataka Land Revenue Act, 1964. Authenticate at https://landrecords.karnataka.gov.in/",
+      "uploaded_at": "2026-11-04T09:09:17.021Z",
+      "status": "analyzed"
+    }
+  ],
+  "document_analyses": [
+    {
+      "analysis_id": "doc-analysis-1793783357039-cl0r1",
+      "document_id": "doc-sample-1793783357021-fdgy",
+      "user_id": "user-default-citizen",
+      "document_type": "RTC / Pahani (Record of Rights, Tenancy & Crops)",
+      "issuing_authority": "Revenue Department, Government of Karnataka",
+      "document_holder": "Named in Record",
+      "reference_numbers": {
+        "Status": "Extracted from file"
+      },
+      "financial_amounts": {},
+      "property_or_personal_details": {
+        "Jurisdiction": "Karnataka State"
+      },
+      "what_is_this_document": "This is an official administrative document recognized under Karnataka state revenue and municipal regulations.",
+      "why_is_it_important": "Crucial for establishing lawful status, claiming government scheme benefits, or verifying property encumbrances.",
+      "important_dates": [
+        {
+          "label": "Document Recorded Date",
+          "date": "Reflected in document",
+          "is_deadline": false
+        }
+      ],
+      "required_actions": [
+        "Verify details on the official government portal using the link below",
+        "Ensure names match your Aadhaar card and Revenue registers"
+      ],
+      "required_supporting_documents": [
+        "Aadhaar Card",
+        "Ration Card / Revenue extract"
+      ],
+      "warnings": [
+        "NagrikAI provides guidance. Genuine authentication requires checking the official portal."
+      ],
+      "relevant_department": "Revenue Department, Government of Karnataka",
+      "official_verification_portal": {
+        "name": "Karnataka Bhoomi Land Records",
+        "url": "https://landrecords.karnataka.gov.in/",
+        "procedure": "Go to Bhoomi Portal -> View RTC & MR -> Select District, Taluk, Hobli, Village, and Survey Number to verify ownership and crop entries.",
+        "status": "Verified"
+      },
+      "sources_used": [
+        {
+          "source_name": "Government of Karnataka Official Portal",
+          "department": "Department of Information Technology & e-Governance",
+          "official_url": "https://www.karnataka.gov.in/",
+          "verification_status": "Verified",
+          "last_checked": "2026-11-04T09:08:52.315Z"
+        },
+        {
+          "source_name": "Seva Sindhu Citizen Service Portal",
+          "department": "Department of e-Governance, Karnataka",
+          "official_url": "https://sevasindhu.karnataka.gov.in/",
+          "verification_status": "Verified",
+          "last_checked": "2026-11-04T09:08:52.316Z"
+        }
+      ],
+      "analyzed_at": "2026-11-04T09:09:37.341Z",
+      "language": "en",
+      "confidence_score": 90
+    }
+  ],
+  "schemes": [
+    {
+      "scheme_id": "scheme-ssp-postmatric",
+      "scheme_name": "Karnataka State Scholarship (SSP Post-Matric)",
+      "scheme_name_kannada": "ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶ (ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನ)",
+      "scheme_category": "scholarship",
+      "implementing_department": "Social Welfare, Tribal Welfare, BCWD & Minorities Welfare Departments",
+      "state_or_central": "Karnataka State",
+      "description": "Comprehensive financial scholarship and fee reimbursement for Karnataka students pursuing Post-Matric, ITI, Diploma, Undergraduate, and Postgraduate degrees.",
+      "benefits": "Full/Partial Tuition Fee reimbursement, Maintenance Allowance up to ₹1,200/month, and hostel fee subsidy.",
+      "eligibility_rules": {
+        "must_be_karnataka_resident": true,
+        "education_levels": [
+          "Post-Matric",
+          "Diploma",
+          "Undergraduate",
+          "Postgraduate",
+          "Professional Course"
+        ],
+        "categories": [
+          "SC",
+          "ST",
+          "Cat-1",
+          "2A",
+          "2B",
+          "3A",
+          "3B",
+          "General",
+          "Minority"
+        ],
+        "max_annual_income": 250000,
+        "occupations": [
+          "Student"
+        ]
+      },
+      "exclusion_criteria": [
+        "Students already availing full financial benefits from other central or private scholarship schemes",
+        "Annual family income exceeding specified category threshold",
+        "Non-Karnataka domicile students (unless special quota permitted by GoK)"
+      ],
+      "required_documents": [
+        "SATS Student Number / College USN / Registration Number",
+        "RD Number of valid Caste and Income Certificate issued by Revenue Department (Nadakacheri)",
+        "Aadhaar seeded active Bank Account",
+        "College Fee Receipt & Admission Confirmation",
+        "Hostel certificate (if residing in government/private hostel)"
+      ],
+      "application_process": "Apply electronically on the Karnataka State Scholarship Portal (SSP). Enter Aadhaar, authenticate via OTP, link College USN and Revenue RD numbers for instant verification.",
+      "application_url": "https://ssp.karnataka.gov.in/",
+      "official_guidelines_url": "https://ssp.karnataka.gov.in/postmatric/",
+      "source_ids": [
+        "src-ssp",
+        "src-swd",
+        "src-bcwd"
+      ],
+      "publication_date": "2024-06-01",
+      "effective_date": "2024-06-01",
+      "last_verified_date": "2026-11-01",
+      "verification_status": "Verified"
+    },
+    {
+      "scheme_id": "scheme-gruha-lakshmi",
+      "scheme_name": "Gruha Lakshmi Scheme",
+      "scheme_name_kannada": "ಗೃಹಲಕ್ಷ್ಮಿ ಯೋಜನೆ",
+      "scheme_category": "women_child",
+      "implementing_department": "Department of Women and Child Development, Government of Karnataka",
+      "state_or_central": "Karnataka State",
+      "description": "Empowerment financial assistance providing ₹2,000 monthly direct bank transfer to the recognized woman head of every eligible household in Karnataka.",
+      "benefits": "₹2,000 per month (₹24,000 annually) directly credited to Aadhaar-seeded bank account of the woman head of household.",
+      "eligibility_rules": {
+        "must_be_karnataka_resident": true,
+        "gender": "Female",
+        "min_age": 18,
+        "additional_criteria": [
+          "Must be designated as the head of family in BPL, APL, or Antyodaya ration card",
+          "Neither the woman head nor her husband may be income tax payers or GST filers"
+        ]
+      },
+      "exclusion_criteria": [
+        "Woman head or her husband paying Income Tax (IT Returns)",
+        "Woman head or her husband filing GST returns",
+        "Government employees or pensioners drawing state/central government pensions"
+      ],
+      "required_documents": [
+        "Karnataka Food and Civil Supplies Ration Card (BPL / Antyodaya / APL) with applicant named as Head of Family",
+        "Applicant Aadhaar Card",
+        "Husband Aadhaar Card (if applicable)",
+        "Aadhaar-linked Bank Passbook / NPCI mapping"
+      ],
+      "application_process": "Apply through Seva Sindhu portal, Grama One, Karnataka One, or Bangalore One centers. Free registration with biometric/OTP verification.",
+      "application_url": "https://sevasindhu.karnataka.gov.in/",
+      "official_guidelines_url": "https://dwcd.karnataka.gov.in/",
+      "source_ids": [
+        "src-dwcd",
+        "src-sevasindhu",
+        "src-sevaone"
+      ],
+      "publication_date": "2023-08-30",
+      "effective_date": "2023-08-30",
+      "last_verified_date": "2026-11-01",
+      "verification_status": "Verified"
+    },
+    {
+      "scheme_id": "scheme-yuva-nidhi",
+      "scheme_name": "Yuva Nidhi Scheme (Unemployment Allowance)",
+      "scheme_name_kannada": "ಯುವನಿಧಿ ಯೋಜನೆ (ನಿರುದ್ಯೋಗ ಭತ್ಯೆ)",
+      "scheme_category": "youth_employment",
+      "implementing_department": "Department of Skill Development, Entrepreneurship and Livelihood, Karnataka",
+      "state_or_central": "Karnataka State",
+      "description": "Monthly unemployment financial allowance and skill-training support for educated Karnataka youths holding degree or diploma qualifications.",
+      "benefits": "₹3,000 per month for Degree holders; ₹1,500 per month for Diploma holders, for a maximum period of 2 years or until employment is secured.",
+      "eligibility_rules": {
+        "must_be_karnataka_resident": true,
+        "min_age": 18,
+        "max_age": 35,
+        "education_levels": [
+          "Undergraduate",
+          "Postgraduate",
+          "Diploma",
+          "Professional Course"
+        ],
+        "is_unemployed_grad_required": true,
+        "occupations": [
+          "Unemployed",
+          "Student"
+        ]
+      },
+      "exclusion_criteria": [
+        "Employed in government, public sector, or private formal sector (covered under EPF/ESIC)",
+        "Self-employed individuals paying GST or professional tax",
+        "Students enrolled in full-time regular higher education programs after graduating",
+        "Beneficiaries who have already completed 2 years under the scheme"
+      ],
+      "required_documents": [
+        "Degree / Diploma Convocation or Provisional Passing Certificate",
+        "Karnataka SSLC / 10th Marks card / Domicile proof (minimum 6 years schooling in Karnataka)",
+        "Aadhaar Card",
+        "Aadhaar-seeded active Bank Account"
+      ],
+      "application_process": "Apply online on Seva Sindhu or via Karnataka One / Grama One. System verifies university degree credentials against Karnataka higher education repository.",
+      "application_url": "https://sevasindhugs.karnataka.gov.in/",
+      "official_guidelines_url": "https://sevasindhu.karnataka.gov.in/",
+      "source_ids": [
+        "src-sevasindhu",
+        "src-dce"
+      ],
+      "publication_date": "2023-12-26",
+      "effective_date": "2024-01-01",
+      "last_verified_date": "2026-11-01",
+      "verification_status": "Verified"
+    },
+    {
+      "scheme_id": "scheme-raitha-siri",
+      "scheme_name": "Raitha Siri Scheme (Millet Cultivation Incentive)",
+      "scheme_name_kannada": "ರೈತ ಸಿರಿ ಯೋಜನೆ (ಸಿರಿಧಾನ್ಯ ಪ್ರೋತ್ಸಾಹಧನ)",
+      "scheme_category": "farmer",
+      "implementing_department": "Department of Agriculture, Government of Karnataka",
+      "state_or_central": "Karnataka State",
+      "description": "Financial assistance for Karnataka farmers growing nutricereals / millets (Ragi, Jowar, Navane, Same, Haraka, Korale, Baragu, Oodalu) to promote climate-resilient farming.",
+      "benefits": "Direct financial incentive of ₹10,000 per hectare (maximum ₹20,000 up to 2 hectares) directly credited to farmer bank account.",
+      "eligibility_rules": {
+        "must_be_karnataka_resident": true,
+        "occupations": [
+          "Farmer"
+        ],
+        "farmer_land_required": true,
+        "additional_criteria": [
+          "Must cultivate designated minor millets (Siri Dhanya) in Karnataka",
+          "Crop details must be recorded and verified in Karnataka Farmer Crop Survey Mobile App"
+        ]
+      },
+      "exclusion_criteria": [
+        "Non-landowning individuals or lands not verified in Bhoomi",
+        "Crops other than designated notified millets",
+        "Landholding exceeding upper incentive subsidy threshold (max 2 hectares)"
+      ],
+      "required_documents": [
+        "FRUITS Farmer Identification (FID Number)",
+        "Bhoomi RTC / Pahani showing land ownership and survey number",
+        "Crop Survey App recording confirmation of millet cultivation",
+        "Aadhaar-seeded bank passbook"
+      ],
+      "application_process": "Register on FRUITS portal with Bhoomi RTC. Agriculture Officer validates millet sowing via mobile crop survey data; incentive transferred via DBT.",
+      "application_url": "https://fruits.karnataka.gov.in/",
+      "official_guidelines_url": "https://raitamitra.karnataka.gov.in/",
+      "source_ids": [
+        "src-fruits",
+        "src-raitamitra",
+        "src-bhoomi"
+      ],
+      "publication_date": "2023-04-01",
+      "effective_date": "2023-04-01",
+      "last_verified_date": "2026-11-01",
+      "verification_status": "Verified"
+    },
+    {
+      "scheme_id": "scheme-ganga-kalyana",
+      "scheme_name": "Ganga Kalyana Scheme (Irrigation Borewells)",
+      "scheme_name_kannada": "ಗಂಗಾ ಕಲ್ಯಾಣ ಯೋಜನೆ (ನೀರಾವರಿ ಕೊಳವೆಬಾವಿ)",
+      "scheme_category": "farmer",
+      "implementing_department": "Karnataka Minorities / BCWD / Dr. B.R. Ambedkar Development Corporation",
+      "state_or_central": "Karnataka State",
+      "description": "Individual and collective irrigation borewell drilling, pump energization, and pipeline installation for small and marginal farmers belonging to SC, ST, and backward communities.",
+      "benefits": "Free borewell drilling, submersible pump motor supply, electrical infrastructure, and pipeline with subsidy up to ₹4.50 Lakhs in individual / group irrigation units.",
+      "eligibility_rules": {
+        "must_be_karnataka_resident": true,
+        "occupations": [
+          "Farmer"
+        ],
+        "categories": [
+          "SC",
+          "ST",
+          "Cat-1",
+          "2A",
+          "2B",
+          "3A",
+          "3B",
+          "Minority"
+        ],
+        "max_annual_income": 98000,
+        "farmer_land_required": true,
+        "additional_criteria": [
+          "Must be a small or marginal farmer owning at least 1.20 acres up to 5 acres of dry land"
+        ]
+      },
+      "exclusion_criteria": [
+        "Farmers possessing perennial irrigation sources or existing functional borewells",
+        "Large farmers owning more than 5 acres of irrigated agricultural land",
+        "Annual family income exceeding ₹98,000 in rural areas or ₹1,20,000 in urban areas"
+      ],
+      "required_documents": [
+        "Bhoomi RTC / Pahani (latest certified extract)",
+        "Small / Marginal Farmer Certificate issued by local Tahsildar / Assistant Agricultural Director",
+        "Caste and Income Certificate (RD Number from Nadakacheri)",
+        "Groundwater clearance / No-Objection Certificate from District Geologist"
+      ],
+      "application_process": "Apply online through Seva Sindhu or dedicated Karnataka Corporation development portals (e.g. Ambedkar or Devaraj Urs Corporation).",
+      "application_url": "https://sevasindhu.karnataka.gov.in/",
+      "official_guidelines_url": "https://swd.karnataka.gov.in/",
+      "source_ids": [
+        "src-bhoomi",
+        "src-swd",
+        "src-bcwd"
+      ],
+      "publication_date": "2023-05-15",
+      "effective_date": "2023-05-15",
+      "last_verified_date": "2026-11-01",
+      "verification_status": "Verified"
+    },
+    {
+      "scheme_id": "scheme-arivu-loan",
+      "scheme_name": "Arivu Education Loan Scheme",
+      "scheme_name_kannada": "ಅರಿವು ಶೈಕ್ಷಣಿಕ ಸಾಲ ಯೋಜನೆ",
+      "scheme_category": "backward_classes",
+      "implementing_department": "D. Devaraj Urs Backward Classes Development Corporation / KMDCL",
+      "state_or_central": "Karnataka State",
+      "description": "Low-interest education loan assistance for eligible students from backward classes and minority communities admitted to professional courses through KEA (CET / NEET).",
+      "benefits": "Loan assistance up to ₹1,00,000 to ₹5,00,000 per year at a subsidized interest rate of 2% per annum, directly paid towards college tuition fees.",
+      "eligibility_rules": {
+        "must_be_karnataka_resident": true,
+        "categories": [
+          "Cat-1",
+          "2A",
+          "3A",
+          "3B",
+          "Minority"
+        ],
+        "max_annual_income": 350000,
+        "education_levels": [
+          "Undergraduate",
+          "Professional Course"
+        ],
+        "occupations": [
+          "Student"
+        ]
+      },
+      "exclusion_criteria": [
+        "Management quota admissions without KEA (CET/NEET) counseling allotment",
+        "Annual family income exceeding ₹3.5 Lakhs per annum",
+        "Defaulters on prior state development corporation loans"
+      ],
+      "required_documents": [
+        "KEA Allotment Letter (CET / NEET admission slip)",
+        "10th & 12th / PUC Marks cards",
+        "Caste and Income Certificate with valid RD number",
+        "College fee structure verified by the principal"
+      ],
+      "application_process": "Submit application via D. Devaraj Urs Corporation portal or Seva Sindhu after receiving KEA course allotment letter.",
+      "application_url": "https://kmdc.karnataka.gov.in/",
+      "official_guidelines_url": "https://bcwd.karnataka.gov.in/",
+      "source_ids": [
+        "src-bcwd",
+        "src-sevasindhu"
+      ],
+      "publication_date": "2024-05-10",
+      "effective_date": "2024-05-10",
+      "last_verified_date": "2026-11-01",
+      "verification_status": "Verified"
+    },
+    {
+      "scheme_id": "scheme-gruha-jyothi",
+      "scheme_name": "Gruha Jyothi (Free Domestic Electricity)",
+      "scheme_name_kannada": "ಗೃಹ ಜ್ಯೋತಿ (ಉಚಿತ ಗೃಹ ವಿದ್ಯುತ್)",
+      "scheme_category": "social_welfare",
+      "implementing_department": "Energy Department, Government of Karnataka (BESCOM, HESCOM, GESCOM, MESCOM, CESC)",
+      "state_or_central": "Karnataka State",
+      "description": "Provides free domestic electricity up to 200 units per month to all residential domestic power consumers across Karnataka based on average consumption.",
+      "benefits": "Zero electricity bill up to the eligible monthly entitlement limit (up to a ceiling of 200 units per month).",
+      "eligibility_rules": {
+        "must_be_karnataka_resident": true,
+        "additional_criteria": [
+          "Must hold an active domestic electricity connection Account ID in Karnataka (BESCOM/MESCOM/HESCOM/GESCOM/CESC)",
+          "One connection per Aadhaar card per household"
+        ]
+      },
+      "exclusion_criteria": [
+        "Commercial or industrial power connections",
+        "Average monthly usage exceeding 200 units threshold",
+        "Multiple claims registered on a single Aadhaar card"
+      ],
+      "required_documents": [
+        "Electricity Bill showing Consumer Account ID / Account Number",
+        "Aadhaar Card of the resident / tenant",
+        "Rental Agreement (if residing as tenant in rented premises)"
+      ],
+      "application_process": "Register on Seva Sindhu Gruha Jyothi portal with Electricity Consumer ID and Aadhaar. Automatic verification and billing rebate.",
+      "application_url": "https://sevasindhugs.karnataka.gov.in/gruhajyothi/",
+      "official_guidelines_url": "https://energy.karnataka.gov.in/",
+      "source_ids": [
+        "src-sevasindhu"
+      ],
+      "publication_date": "2023-06-05",
+      "effective_date": "2023-08-01",
+      "last_verified_date": "2026-11-01",
+      "verification_status": "Verified"
+    },
+    {
+      "scheme_id": "scheme-shakthi",
+      "scheme_name": "Shakthi Scheme (Free Bus Travel for Women)",
+      "scheme_name_kannada": "ಶಕ್ತಿ ಯೋಜನೆ (ಮಹಿಳೆಯರಿಗೆ ಉಚಿತ ಬಸ್ ಪ್ರಯಾಣ)",
+      "scheme_category": "women_child",
+      "implementing_department": "Transport Department, Government of Karnataka (KSRTC, BMTC, NWKRTC, KKRTC)",
+      "state_or_central": "Karnataka State",
+      "description": "Universal free bus travel for all women, girl students, and transgender individuals domicile in Karnataka across state-run ordinary and express bus services.",
+      "benefits": "Free zero-fare bus ticket across BMTC, KSRTC, NWKRTC, and KKRTC state transport buses within the territorial jurisdiction of Karnataka.",
+      "eligibility_rules": {
+        "must_be_karnataka_resident": true,
+        "gender": "Female",
+        "additional_criteria": [
+          "Domicile resident of Karnataka state"
+        ]
+      },
+      "exclusion_criteria": [
+        "Luxury, premium AC, sleeper, and inter-state bus services (e.g., Airavat, Club Class, Flybus, Rajahamsa)",
+        "Travel originating or concluding outside the territorial boundaries of Karnataka"
+      ],
+      "required_documents": [
+        "Any Government-issued Photo ID card showing Karnataka address (Aadhaar, Voter ID, Driving License) or Shakthi Smart Card"
+      ],
+      "application_process": "Present government photo ID with Karnataka address to bus conductor to receive zero-fare Shakthi ticket. Apply on Seva Sindhu for physical Shakthi Smart Card.",
+      "application_url": "https://sevasindhuservices.karnataka.gov.in/",
+      "official_guidelines_url": "https://transport.karnataka.gov.in/",
+      "source_ids": [
+        "src-sevasindhu",
+        "src-dwcd"
+      ],
+      "publication_date": "2023-06-11",
+      "effective_date": "2023-06-11",
+      "last_verified_date": "2026-11-01",
+      "verification_status": "Verified"
+    },
+    {
+      "scheme_id": "scheme-pmkisan-karnataka",
+      "scheme_name": "PM-KISAN (Central Govt Scheme with Karnataka FRUITS Integration)",
+      "scheme_name_kannada": "ಪಿಎಂ-ಕಿಸಾನ್ ಯೋಜನೆ (ಕೇಂದ್ರ ಸರ್ಕಾರ - ಕರ್ನಾಟಕ ಫ್ರೂಟ್ಸ್ ಜೋಡಣೆ)",
+      "scheme_category": "farmer",
+      "implementing_department": "Ministry of Agriculture, GoI (Administered in Karnataka via Agriculture Dept & FRUITS)",
+      "state_or_central": "Central Government (Karnataka Integration)",
+      "description": "Central Government income support scheme providing ₹6,000 per year in 3 equal installments to landholding farmer families across Karnataka, verified through FRUITS and Bhoomi land records.",
+      "benefits": "₹6,000 per year credited in three four-monthly installments of ₹2,000 directly into Aadhaar-seeded bank accounts.",
+      "eligibility_rules": {
+        "must_be_karnataka_resident": true,
+        "occupations": [
+          "Farmer"
+        ],
+        "farmer_land_required": true,
+        "additional_criteria": [
+          "Must hold cultivable landholding registered in Bhoomi land records",
+          "Must complete mandatory Aadhaar e-KYC and FRUITS FID registration"
+        ]
+      },
+      "exclusion_criteria": [
+        "Institutional landholders",
+        "Farmer family members who paid income tax in the last assessment year",
+        "Constitutional post holders, serving/retired government officers and employees",
+        "Retired pensioners with monthly pension of ₹10,000 or more"
+      ],
+      "required_documents": [
+        "Karnataka FRUITS Farmer ID (FID)",
+        "Bhoomi RTC / Pahani record",
+        "Aadhaar Card with biometric/OTP e-KYC",
+        "NPCI-mapped active bank account"
+      ],
+      "application_process": "Farmers can register via PM-KISAN portal or via Karnataka Raitha Samparka Kendras with their Bhoomi RTC and FRUITS FID number.",
+      "application_url": "https://pmkisan.gov.in/",
+      "official_guidelines_url": "https://fruits.karnataka.gov.in/",
+      "source_ids": [
+        "src-pmkisan",
+        "src-fruits",
+        "src-bhoomi"
+      ],
+      "publication_date": "2019-02-24",
+      "effective_date": "2019-02-24",
+      "last_verified_date": "2026-11-01",
+      "verification_status": "Verified"
+    }
+  ],
+  "eligibility_checks": [
+    {
+      "check_id": "check-1793783347704-hc5e",
+      "user_id": "user-default-citizen",
+      "input_profile": {
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "age": 24,
+        "occupation": "Student",
+        "education_level": "Undergraduate",
+        "annual_income": 180000,
+        "category": "2A",
+        "gender": "Female"
+      },
+      "results": [
+        {
+          "scheme_id": "scheme-ssp-postmatric",
+          "scheme_name": "Karnataka State Scholarship (SSP Post-Matric)",
+          "scheme_name_kannada": "ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶ (ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನ)",
+          "department": "Social Welfare, Tribal Welfare, BCWD & Minorities Welfare Departments",
+          "state_or_central": "Karnataka State",
+          "category": "scholarship",
+          "status": "LIKELY ELIGIBLE",
+          "conditions_satisfied": [
+            "Resident of Karnataka state confirmed",
+            "Occupation matched: Student",
+            "Annual family income ₹1,80,000 is within eligibility threshold of ₹2,50,000",
+            "Education level satisfied: Undergraduate",
+            "Category criterion satisfied (2A)"
+          ],
+          "conditions_not_satisfied": [],
+          "missing_information": [],
+          "benefits": "Full/Partial Tuition Fee reimbursement, Maintenance Allowance up to ₹1,200/month, and hostel fee subsidy.",
+          "required_documents": [
+            "SATS Student Number / College USN / Registration Number",
+            "RD Number of valid Caste and Income Certificate issued by Revenue Department (Nadakacheri)",
+            "Aadhaar seeded active Bank Account",
+            "College Fee Receipt & Admission Confirmation",
+            "Hostel certificate (if residing in government/private hostel)"
+          ],
+          "application_procedure": "Apply electronically on the Karnataka State Scholarship Portal (SSP). Enter Aadhaar, authenticate via OTP, link College USN and Revenue RD numbers for instant verification.",
+          "application_url": "https://ssp.karnataka.gov.in/",
+          "guidelines_url": "https://ssp.karnataka.gov.in/postmatric/",
+          "last_verified_date": "2026-11-01"
+        },
+        {
+          "scheme_id": "scheme-gruha-lakshmi",
+          "scheme_name": "Gruha Lakshmi Scheme",
+          "scheme_name_kannada": "ಗೃಹಲಕ್ಷ್ಮಿ ಯೋಜನೆ",
+          "department": "Department of Women and Child Development, Government of Karnataka",
+          "state_or_central": "Karnataka State",
+          "category": "women_child",
+          "status": "MORE INFORMATION REQUIRED",
+          "conditions_satisfied": [
+            "Resident of Karnataka state confirmed",
+            "Meets gender criterion: Female",
+            "Meets age criterion (24 years falls within permitted bracket)"
+          ],
+          "conditions_not_satisfied": [],
+          "missing_information": [
+            "Declaration of Income Tax/GST filing status is required"
+          ],
+          "benefits": "₹2,000 per month (₹24,000 annually) directly credited to Aadhaar-seeded bank account of the woman head of household.",
+          "required_documents": [
+            "Karnataka Food and Civil Supplies Ration Card (BPL / Antyodaya / APL) with applicant named as Head of Family",
+            "Applicant Aadhaar Card",
+            "Husband Aadhaar Card (if applicable)",
+            "Aadhaar-linked Bank Passbook / NPCI mapping"
+          ],
+          "application_procedure": "Apply through Seva Sindhu portal, Grama One, Karnataka One, or Bangalore One centers. Free registration with biometric/OTP verification.",
+          "application_url": "https://sevasindhu.karnataka.gov.in/",
+          "guidelines_url": "https://dwcd.karnataka.gov.in/",
+          "last_verified_date": "2026-11-01"
+        },
+        {
+          "scheme_id": "scheme-yuva-nidhi",
+          "scheme_name": "Yuva Nidhi Scheme (Unemployment Allowance)",
+          "scheme_name_kannada": "ಯುವನಿಧಿ ಯೋಜನೆ (ನಿರುದ್ಯೋಗ ಭತ್ಯೆ)",
+          "department": "Department of Skill Development, Entrepreneurship and Livelihood, Karnataka",
+          "state_or_central": "Karnataka State",
+          "category": "youth_employment",
+          "status": "MORE INFORMATION REQUIRED",
+          "conditions_satisfied": [
+            "Resident of Karnataka state confirmed",
+            "Meets age criterion (24 years falls within permitted bracket)",
+            "Occupation matched: Student",
+            "Education level satisfied: Undergraduate"
+          ],
+          "conditions_not_satisfied": [],
+          "missing_information": [
+            "Employment status post-graduation is required"
+          ],
+          "benefits": "₹3,000 per month for Degree holders; ₹1,500 per month for Diploma holders, for a maximum period of 2 years or until employment is secured.",
+          "required_documents": [
+            "Degree / Diploma Convocation or Provisional Passing Certificate",
+            "Karnataka SSLC / 10th Marks card / Domicile proof (minimum 6 years schooling in Karnataka)",
+            "Aadhaar Card",
+            "Aadhaar-seeded active Bank Account"
+          ],
+          "application_procedure": "Apply online on Seva Sindhu or via Karnataka One / Grama One. System verifies university degree credentials against Karnataka higher education repository.",
+          "application_url": "https://sevasindhugs.karnataka.gov.in/",
+          "guidelines_url": "https://sevasindhu.karnataka.gov.in/",
+          "last_verified_date": "2026-11-01"
+        },
+        {
+          "scheme_id": "scheme-raitha-siri",
+          "scheme_name": "Raitha Siri Scheme (Millet Cultivation Incentive)",
+          "scheme_name_kannada": "ರೈತ ಸಿರಿ ಯೋಜನೆ (ಸಿರಿಧಾನ್ಯ ಪ್ರೋತ್ಸಾಹಧನ)",
+          "department": "Department of Agriculture, Government of Karnataka",
+          "state_or_central": "Karnataka State",
+          "category": "farmer",
+          "status": "NOT ELIGIBLE",
+          "conditions_satisfied": [
+            "Resident of Karnataka state confirmed"
+          ],
+          "conditions_not_satisfied": [
+            "Occupation does not match required categories (Farmer). Provided: Student"
+          ],
+          "missing_information": [
+            "Agricultural land ownership status (Bhoomi RTC) is required"
+          ],
+          "benefits": "Direct financial incentive of ₹10,000 per hectare (maximum ₹20,000 up to 2 hectares) directly credited to farmer bank account.",
+          "required_documents": [
+            "FRUITS Farmer Identification (FID Number)",
+            "Bhoomi RTC / Pahani showing land ownership and survey number",
+            "Crop Survey App recording confirmation of millet cultivation",
+            "Aadhaar-seeded bank passbook"
+          ],
+          "application_procedure": "Register on FRUITS portal with Bhoomi RTC. Agriculture Officer validates millet sowing via mobile crop survey data; incentive transferred via DBT.",
+          "application_url": "https://fruits.karnataka.gov.in/",
+          "guidelines_url": "https://raitamitra.karnataka.gov.in/",
+          "last_verified_date": "2026-11-01"
+        },
+        {
+          "scheme_id": "scheme-ganga-kalyana",
+          "scheme_name": "Ganga Kalyana Scheme (Irrigation Borewells)",
+          "scheme_name_kannada": "ಗಂಗಾ ಕಲ್ಯಾಣ ಯೋಜನೆ (ನೀರಾವರಿ ಕೊಳವೆಬಾವಿ)",
+          "department": "Karnataka Minorities / BCWD / Dr. B.R. Ambedkar Development Corporation",
+          "state_or_central": "Karnataka State",
+          "category": "farmer",
+          "status": "NOT ELIGIBLE",
+          "conditions_satisfied": [
+            "Resident of Karnataka state confirmed",
+            "Category criterion satisfied (2A)"
+          ],
+          "conditions_not_satisfied": [
+            "Occupation does not match required categories (Farmer). Provided: Student",
+            "Annual family income ₹1,80,000 exceeds upper ceiling limit of ₹98,000"
+          ],
+          "missing_information": [
+            "Agricultural land ownership status (Bhoomi RTC) is required"
+          ],
+          "benefits": "Free borewell drilling, submersible pump motor supply, electrical infrastructure, and pipeline with subsidy up to ₹4.50 Lakhs in individual / group irrigation units.",
+          "required_documents": [
+            "Bhoomi RTC / Pahani (latest certified extract)",
+            "Small / Marginal Farmer Certificate issued by local Tahsildar / Assistant Agricultural Director",
+            "Caste and Income Certificate (RD Number from Nadakacheri)",
+            "Groundwater clearance / No-Objection Certificate from District Geologist"
+          ],
+          "application_procedure": "Apply online through Seva Sindhu or dedicated Karnataka Corporation development portals (e.g. Ambedkar or Devaraj Urs Corporation).",
+          "application_url": "https://sevasindhu.karnataka.gov.in/",
+          "guidelines_url": "https://swd.karnataka.gov.in/",
+          "last_verified_date": "2026-11-01"
+        },
+        {
+          "scheme_id": "scheme-arivu-loan",
+          "scheme_name": "Arivu Education Loan Scheme",
+          "scheme_name_kannada": "ಅರಿವು ಶೈಕ್ಷಣಿಕ ಸಾಲ ಯೋಜನೆ",
+          "department": "D. Devaraj Urs Backward Classes Development Corporation / KMDCL",
+          "state_or_central": "Karnataka State",
+          "category": "backward_classes",
+          "status": "LIKELY ELIGIBLE",
+          "conditions_satisfied": [
+            "Resident of Karnataka state confirmed",
+            "Occupation matched: Student",
+            "Annual family income ₹1,80,000 is within eligibility threshold of ₹3,50,000",
+            "Education level satisfied: Undergraduate",
+            "Category criterion satisfied (2A)"
+          ],
+          "conditions_not_satisfied": [],
+          "missing_information": [],
+          "benefits": "Loan assistance up to ₹1,00,000 to ₹5,00,000 per year at a subsidized interest rate of 2% per annum, directly paid towards college tuition fees.",
+          "required_documents": [
+            "KEA Allotment Letter (CET / NEET admission slip)",
+            "10th & 12th / PUC Marks cards",
+            "Caste and Income Certificate with valid RD number",
+            "College fee structure verified by the principal"
+          ],
+          "application_procedure": "Submit application via D. Devaraj Urs Corporation portal or Seva Sindhu after receiving KEA course allotment letter.",
+          "application_url": "https://kmdc.karnataka.gov.in/",
+          "guidelines_url": "https://bcwd.karnataka.gov.in/",
+          "last_verified_date": "2026-11-01"
+        },
+        {
+          "scheme_id": "scheme-gruha-jyothi",
+          "scheme_name": "Gruha Jyothi (Free Domestic Electricity)",
+          "scheme_name_kannada": "ಗೃಹ ಜ್ಯೋತಿ (ಉಚಿತ ಗೃಹ ವಿದ್ಯುತ್)",
+          "department": "Energy Department, Government of Karnataka (BESCOM, HESCOM, GESCOM, MESCOM, CESC)",
+          "state_or_central": "Karnataka State",
+          "category": "social_welfare",
+          "status": "LIKELY ELIGIBLE",
+          "conditions_satisfied": [
+            "Resident of Karnataka state confirmed"
+          ],
+          "conditions_not_satisfied": [],
+          "missing_information": [],
+          "benefits": "Zero electricity bill up to the eligible monthly entitlement limit (up to a ceiling of 200 units per month).",
+          "required_documents": [
+            "Electricity Bill showing Consumer Account ID / Account Number",
+            "Aadhaar Card of the resident / tenant",
+            "Rental Agreement (if residing as tenant in rented premises)"
+          ],
+          "application_procedure": "Register on Seva Sindhu Gruha Jyothi portal with Electricity Consumer ID and Aadhaar. Automatic verification and billing rebate.",
+          "application_url": "https://sevasindhugs.karnataka.gov.in/gruhajyothi/",
+          "guidelines_url": "https://energy.karnataka.gov.in/",
+          "last_verified_date": "2026-11-01"
+        },
+        {
+          "scheme_id": "scheme-shakthi",
+          "scheme_name": "Shakthi Scheme (Free Bus Travel for Women)",
+          "scheme_name_kannada": "ಶಕ್ತಿ ಯೋಜನೆ (ಮಹಿಳೆಯರಿಗೆ ಉಚಿತ ಬಸ್ ಪ್ರಯಾಣ)",
+          "department": "Transport Department, Government of Karnataka (KSRTC, BMTC, NWKRTC, KKRTC)",
+          "state_or_central": "Karnataka State",
+          "category": "women_child",
+          "status": "LIKELY ELIGIBLE",
+          "conditions_satisfied": [
+            "Resident of Karnataka state confirmed",
+            "Meets gender criterion: Female"
+          ],
+          "conditions_not_satisfied": [],
+          "missing_information": [],
+          "benefits": "Free zero-fare bus ticket across BMTC, KSRTC, NWKRTC, and KKRTC state transport buses within the territorial jurisdiction of Karnataka.",
+          "required_documents": [
+            "Any Government-issued Photo ID card showing Karnataka address (Aadhaar, Voter ID, Driving License) or Shakthi Smart Card"
+          ],
+          "application_procedure": "Present government photo ID with Karnataka address to bus conductor to receive zero-fare Shakthi ticket. Apply on Seva Sindhu for physical Shakthi Smart Card.",
+          "application_url": "https://sevasindhuservices.karnataka.gov.in/",
+          "guidelines_url": "https://transport.karnataka.gov.in/",
+          "last_verified_date": "2026-11-01"
+        },
+        {
+          "scheme_id": "scheme-pmkisan-karnataka",
+          "scheme_name": "PM-KISAN (Central Govt Scheme with Karnataka FRUITS Integration)",
+          "scheme_name_kannada": "ಪಿಎಂ-ಕಿಸಾನ್ ಯೋಜನೆ (ಕೇಂದ್ರ ಸರ್ಕಾರ - ಕರ್ನಾಟಕ ಫ್ರೂಟ್ಸ್ ಜೋಡಣೆ)",
+          "department": "Ministry of Agriculture, GoI (Administered in Karnataka via Agriculture Dept & FRUITS)",
+          "state_or_central": "Central Government (Karnataka Integration)",
+          "category": "farmer",
+          "status": "NOT ELIGIBLE",
+          "conditions_satisfied": [
+            "Resident of Karnataka state confirmed"
+          ],
+          "conditions_not_satisfied": [
+            "Occupation does not match required categories (Farmer). Provided: Student"
+          ],
+          "missing_information": [
+            "Agricultural land ownership status (Bhoomi RTC) is required"
+          ],
+          "benefits": "₹6,000 per year credited in three four-monthly installments of ₹2,000 directly into Aadhaar-seeded bank accounts.",
+          "required_documents": [
+            "Karnataka FRUITS Farmer ID (FID)",
+            "Bhoomi RTC / Pahani record",
+            "Aadhaar Card with biometric/OTP e-KYC",
+            "NPCI-mapped active bank account"
+          ],
+          "application_procedure": "Farmers can register via PM-KISAN portal or via Karnataka Raitha Samparka Kendras with their Bhoomi RTC and FRUITS FID number.",
+          "application_url": "https://pmkisan.gov.in/",
+          "guidelines_url": "https://fruits.karnataka.gov.in/",
+          "last_verified_date": "2026-11-01"
+        }
+      ],
+      "checked_at": "2026-11-04T09:09:07.704Z"
+    }
+  ],
+  "government_sources": [
+    {
+      "source_id": "src-karnataka-gov",
+      "source_name": "Government of Karnataka Official Portal",
+      "department": "Department of Information Technology & e-Governance",
+      "source_type": "Portal",
+      "official_url": "https://www.karnataka.gov.in/",
+      "supported_document_types": [
+        "Government Orders",
+        "Gazette Notifications",
+        "Circulars"
+      ],
+      "supported_scheme_ids": [],
+      "last_checked_at": "2026-11-04T09:08:52.315Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Official apex portal of the Government of Karnataka for state administrative directives and official notifications."
+    },
+    {
+      "source_id": "src-sevasindhu",
+      "source_name": "Seva Sindhu Citizen Service Portal",
+      "department": "Department of e-Governance, Karnataka",
+      "source_type": "Service Portal",
+      "official_url": "https://sevasindhu.karnataka.gov.in/",
+      "supported_document_types": [
+        "Income Certificate",
+        "Caste Certificate",
+        "Residence Certificate",
+        "Birth/Death Certificate"
+      ],
+      "supported_scheme_ids": [
+        "scheme-gruha-lakshmi",
+        "scheme-yuva-nidhi",
+        "scheme-gruha-jyothi",
+        "scheme-shakthi"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Primary electronic citizen services delivery platform of Karnataka for online application and tracking of revenue services and guarantee schemes."
+    },
+    {
+      "source_id": "src-sevaone",
+      "source_name": "Seva One / Namma Seve (Karnataka One & Grama One)",
+      "department": "Directorate of Electronic Delivery of Citizen Services (EDCS)",
+      "source_type": "Service Portal",
+      "official_url": "https://sevaone.karnataka.gov.in/",
+      "supported_document_types": [
+        "Utility Bills",
+        "Revenue Certificates",
+        "Service Applications"
+      ],
+      "supported_scheme_ids": [
+        "scheme-gruha-lakshmi",
+        "scheme-gruha-jyothi"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Integrated single-window citizen portal powering Karnataka One (urban) and Grama One (rural) service assistance centers."
+    },
+    {
+      "source_id": "src-ssp",
+      "source_name": "Karnataka State Scholarship Portal (SSP)",
+      "department": "Center for e-Governance, Government of Karnataka",
+      "source_type": "Service Portal",
+      "official_url": "https://ssp.karnataka.gov.in/",
+      "supported_document_types": [
+        "Student ID",
+        "Income Certificate",
+        "Caste Certificate",
+        "Fee Receipt",
+        "Marks Card"
+      ],
+      "supported_scheme_ids": [
+        "scheme-ssp-postmatric",
+        "scheme-ssp-prematric"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 1",
+      "notes": "Single electronic portal for Post-Matric and Pre-Matric scholarships across Social Welfare, Tribal Welfare, BCWD, and Minorities Welfare."
+    },
+    {
+      "source_id": "src-bhoomi",
+      "source_name": "Karnataka Bhoomi Land Records",
+      "department": "Revenue Department, Government of Karnataka",
+      "source_type": "Registry",
+      "official_url": "https://landrecords.karnataka.gov.in/",
+      "supported_document_types": [
+        "RTC / Pahani (Form 16)",
+        "Mutation Extract (Form 12)",
+        "Mutation Status",
+        "Tippan / Akarband"
+      ],
+      "supported_scheme_ids": [
+        "scheme-pmkisan-karnataka",
+        "scheme-raitha-siri",
+        "scheme-ganga-kalyana"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 1",
+      "notes": "Pioneering flagship land records management system. Verifies RTC, survey number, hissa, kharab land, crop details, and owner khata."
+    },
+    {
+      "source_id": "src-kaveri",
+      "source_name": "Kaveri Online Services (Kaveri 2.0)",
+      "department": "Department of Stamps and Registration, Government of Karnataka",
+      "source_type": "Service Portal",
+      "official_url": "https://kaveri.karnataka.gov.in/",
+      "supported_document_types": [
+        "Encumbrance Certificate (EC - Form 15 & 16)",
+        "Registered Sale Deed",
+        "Mortgage Deed",
+        "Rental / Lease Agreement"
+      ],
+      "supported_scheme_ids": [],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 1",
+      "notes": "Official property registration and certified copy issuance portal in Karnataka. Provides online EC search and downloaded certified copy verification."
+    },
+    {
+      "source_id": "src-eswathu",
+      "source_name": "e-Swathu Rural Property Records",
+      "department": "Rural Development and Panchayati Raj Department (RDPR)",
+      "source_type": "Registry",
+      "official_url": "https://eswathu.karnataka.gov.in/",
+      "supported_document_types": [
+        "Form 9 (Grama Panchayat Property)",
+        "Form 11A / 11B (Property Register Extract)"
+      ],
+      "supported_scheme_ids": [],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 1",
+      "notes": "Authoritative registry for rural non-agricultural properties under Gram Panchayats. Form 9 and Form 11 are mandatory for rural property registration."
+    },
+    {
+      "source_id": "src-fruits",
+      "source_name": "FRUITS (Farmer Registration & Unified Beneficiary Info System)",
+      "department": "Department of Agriculture & DPAR e-Gov, Karnataka",
+      "source_type": "Database",
+      "official_url": "https://fruits.karnataka.gov.in/",
+      "supported_document_types": [
+        "FID (Farmer ID)",
+        "Landholding Record",
+        "Crop Survey Proof"
+      ],
+      "supported_scheme_ids": [
+        "scheme-pmkisan-karnataka",
+        "scheme-raitha-siri"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 1",
+      "notes": "Single repository of farmers with validated land ownership from Bhoomi, used across agriculture, horticulture, sericulture, and animal husbandry."
+    },
+    {
+      "source_id": "src-raitamitra",
+      "source_name": "Raita Mitra – Karnataka Agriculture",
+      "department": "Department of Agriculture, Government of Karnataka",
+      "source_type": "Portal",
+      "official_url": "https://raitamitra.karnataka.gov.in/",
+      "supported_document_types": [
+        "Input Subsidy Receipt",
+        "Seed/Fertilizer Subsidy Passbook"
+      ],
+      "supported_scheme_ids": [
+        "scheme-raitha-siri",
+        "scheme-pmkisan-karnataka"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Farmer guidance portal providing details of state agricultural subsidies, crop insurance (PMFBY), Krishi Bhagya, and Raitha Siri."
+    },
+    {
+      "source_id": "src-revenue",
+      "source_name": "Karnataka Revenue Department",
+      "department": "Revenue Department, Government of Karnataka",
+      "source_type": "Portal",
+      "official_url": "https://revenue.karnataka.gov.in/",
+      "supported_document_types": [
+        "RTC",
+        "Pahani",
+        "Caste/Income Certificate",
+        "Land Grant Orders",
+        "Eviction / Land Notices"
+      ],
+      "supported_scheme_ids": [],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 1",
+      "notes": "Apex administrative department overseeing Bhoomi, Nadakacheri, Land Acquisition, and District Tahsildar offices."
+    },
+    {
+      "source_id": "src-swd",
+      "source_name": "Karnataka Social Welfare Department",
+      "department": "Social Welfare Department, Government of Karnataka",
+      "source_type": "Portal",
+      "official_url": "https://swd.karnataka.gov.in/",
+      "supported_document_types": [
+        "SC/ST Caste Certificate (Form D)",
+        "Income Certificate",
+        "Hostel Admission Card"
+      ],
+      "supported_scheme_ids": [
+        "scheme-ssp-postmatric",
+        "scheme-ganga-kalyana"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Welfare schemes, residential schools, Dr. B.R. Ambedkar Development Corporation programs for Scheduled Caste citizens."
+    },
+    {
+      "source_id": "src-bcwd",
+      "source_name": "Karnataka Backward Classes Welfare Department",
+      "department": "Backward Classes Welfare Department, Government of Karnataka",
+      "source_type": "Portal",
+      "official_url": "https://bcwd.karnataka.gov.in/",
+      "supported_document_types": [
+        "OBC Caste Certificate (Form E/F)",
+        "Income Certificate",
+        "Vidyasiri Card"
+      ],
+      "supported_scheme_ids": [
+        "scheme-ssp-postmatric",
+        "scheme-arivu-loan",
+        "scheme-ganga-kalyana"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Scholarships, fee concessions, hostel facilities, and D. Devaraj Urs Backward Classes Development Corporation schemes."
+    },
+    {
+      "source_id": "src-dwcd",
+      "source_name": "Karnataka Department of Women and Child Development",
+      "department": "Women and Child Development Department, Karnataka",
+      "source_type": "Portal",
+      "official_url": "https://dwcd.karnataka.gov.in/",
+      "supported_document_types": [
+        "Ration Card (BPL/AAY)",
+        "Aadhaar Card",
+        "Bank Passbook"
+      ],
+      "supported_scheme_ids": [
+        "scheme-gruha-lakshmi",
+        "scheme-shakthi"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Administers Gruha Lakshmi (Rs 2,000 monthly financial aid to female household head), Bhagyalakshmi, and Anganwadi services."
+    },
+    {
+      "source_id": "src-dme",
+      "source_name": "Karnataka Department of Medical Education",
+      "department": "Medical Education Department, Government of Karnataka",
+      "source_type": "Portal",
+      "official_url": "https://dme.karnataka.gov.in/",
+      "supported_document_types": [
+        "KEA Allotment Letter",
+        "NEET Rank Card",
+        "Stipend Sanction Order"
+      ],
+      "supported_scheme_ids": [
+        "scheme-ssp-postmatric"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Manages government medical, dental, and nursing college seats, government quotas, and medical student welfare."
+    },
+    {
+      "source_id": "src-dce",
+      "source_name": "Karnataka Department of Collegiate Education",
+      "department": "Higher Education Department, Government of Karnataka",
+      "source_type": "Portal",
+      "official_url": "https://dce.karnataka.gov.in/",
+      "supported_document_types": [
+        "Degree Marks Card",
+        "Provisional Degree Certificate",
+        "College Fee Receipt"
+      ],
+      "supported_scheme_ids": [
+        "scheme-ssp-postmatric",
+        "scheme-yuva-nidhi"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Governs First Grade Colleges, polytechnics, university student fee concessions, and higher education welfare."
+    },
+    {
+      "source_id": "src-schooleducation",
+      "source_name": "Karnataka Department of School Education and Literacy",
+      "department": "Department of Public Instruction, Karnataka",
+      "source_type": "Portal",
+      "official_url": "https://schooleducation.karnataka.gov.in/",
+      "supported_document_types": [
+        "SATS Student Number",
+        "Transfer Certificate (TC)",
+        "SSLC Marks Card"
+      ],
+      "supported_scheme_ids": [
+        "scheme-ssp-prematric"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Primary and secondary education, Student Achievement Tracking System (SATS), mid-day meals, and Pre-Matric schemes."
+    },
+    {
+      "source_id": "src-igr",
+      "source_name": "Inspector General of Registration and Stamps (IGR Karnataka)",
+      "department": "Department of Stamps and Registration, Government of Karnataka",
+      "source_type": "Registry",
+      "official_url": "https://igr.karnataka.gov.in/",
+      "supported_document_types": [
+        "Rental Agreement",
+        "Guidance Value Notification",
+        "Stamp Duty Receipt",
+        "Sale Deed"
+      ],
+      "supported_scheme_ids": [],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 1",
+      "notes": "Provides guidance values across Karnataka sub-registrar jurisdictions, stamp duty calculators, and registered deed verifications."
+    },
+    {
+      "source_id": "src-gba",
+      "source_name": "Greater Bengaluru Authority (GBA) / BBMP",
+      "department": "Urban Development Department / GBA, Karnataka",
+      "source_type": "Service Portal",
+      "official_url": "https://gba.karnataka.gov.in/",
+      "supported_document_types": [
+        "BBMP Property Tax Receipt",
+        "Demand Notice",
+        "Khata Certificate (A-Khata/B-Khata)",
+        "Building Plan Sanction"
+      ],
+      "supported_scheme_ids": [],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 1",
+      "notes": "Oversees municipal administration in Greater Bengaluru, SAS property tax, e-Khata issuance, and municipal notices."
+    },
+    {
+      "source_id": "src-nic-karnataka",
+      "source_name": "Karnataka State Data Centre / NIC Karnataka",
+      "department": "National Informatics Centre, Ministry of Electronics & IT",
+      "source_type": "Portal",
+      "official_url": "https://karnataka.nic.in/",
+      "supported_document_types": [
+        "Technical Architecture Documents",
+        "E-Governance Circulars"
+      ],
+      "supported_scheme_ids": [],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 3",
+      "notes": "NIC technical infrastructure powering Bhoomi, FRUITS, Kダイヤ, and Seva Sindhu government databases in Karnataka."
+    },
+    {
+      "source_id": "src-fruits-nic",
+      "source_name": "FRUITS Project Technical Architecture (NIC)",
+      "department": "National Informatics Centre / NIC Karnataka",
+      "source_type": "Database",
+      "official_url": "https://www.nic.gov.in/project/fruits/",
+      "supported_document_types": [
+        "Technical Project Overview",
+        "API Integration Standard"
+      ],
+      "supported_scheme_ids": [
+        "scheme-pmkisan-karnataka"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 3",
+      "notes": "National technical repository documenting how Karnataka FRUITS integrates with Bhoomi land records and Direct Benefit Transfer."
+    },
+    {
+      "source_id": "src-pmkisan",
+      "source_name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+      "department": "Ministry of Agriculture & Farmers Welfare (Integrated with Karnataka FRUITS)",
+      "source_type": "Service Portal",
+      "official_url": "https://pmkisan.gov.in/",
+      "supported_document_types": [
+        "e-KYC Confirmation",
+        "FRUITS FID Linkage Receipt"
+      ],
+      "supported_scheme_ids": [
+        "scheme-pmkisan-karnataka"
+      ],
+      "last_checked_at": "2026-11-04T09:08:52.316Z",
+      "last_verified_at": "2026-11-01T10:00:00.000Z",
+      "verification_status": "Verified",
+      "authority_priority": "Priority 2",
+      "notes": "Central Government scheme providing Rs 6,000/year to landholding farmer families, integrated in Karnataka through FRUITS and Bhoomi land records."
+    }
+  ],
+  "notifications": [
+    {
+      "notification_id": "notif-1",
+      "user_id": "user-default-citizen",
+      "title": "SSP Scholarship AY 2026-27 Open",
+      "message": "State Scholarship Portal applications are currently active for Post-Matric and Pre-Matric courses. Apply with your Revenue RD number.",
+      "type": "scheme",
+      "is_read": false,
+      "created_at": "2026-11-04T05:08:52.433Z",
+      "action_url": "https://ssp.karnataka.gov.in/"
+    },
+    {
+      "notification_id": "notif-2",
+      "user_id": "user-default-citizen",
+      "title": "Bhoomi RTC Digital Verification Update",
+      "message": "Revenue Department has introduced instant Aadhaar-linked e-Pahani downloads on the official Bhoomi portal.",
+      "type": "document",
+      "is_read": false,
+      "created_at": "2026-11-03T09:08:52.433Z",
+      "action_url": "https://landrecords.karnataka.gov.in/"
+    },
+    {
+      "notification_id": "notif-3",
+      "user_id": "user-default-citizen",
+      "title": "GBA / BBMP SAS Property Tax Early Rebate",
+      "message": "Ensure 5% rebate compliance before May 31st by verifying your SAS property tax challan and PID number.",
+      "type": "deadline",
+      "is_read": true,
+      "created_at": "2026-11-02T09:08:52.433Z",
+      "action_url": "https://gba.karnataka.gov.in/"
+    }
+  ],
+  "reminders": [
+    {
+      "reminder_id": "rem-1",
+      "user_id": "user-default-citizen",
+      "title": "Submit SSP Post-Matric Scholarship Application",
+      "description": "Upload fee receipt and verify Revenue RD caste/income certificate on SSP portal.",
+      "due_date": "2026-11-30",
+      "scheme_id": "scheme-ssp-postmatric",
+      "is_completed": false,
+      "created_at": "2026-11-04T09:08:52.433Z"
+    },
+    {
+      "reminder_id": "rem-2",
+      "user_id": "user-default-citizen",
+      "title": "Kaveri EC Verification for Property Purchase",
+      "description": "Request 15-year Nil Encumbrance Certificate Form 15 on Kaveri 2.0 before executing agreement.",
+      "due_date": "2026-12-15",
+      "is_completed": false,
+      "created_at": "2026-11-04T09:08:52.433Z"
+    }
+  ]
+}
