@@ -28,20 +28,32 @@ export function getApiBaseUrl(): string {
         ''
       : '') || '';
 
-  return envUrl ? envUrl.replace(/\/+$/, '') : '';
+  return envUrl ? envUrl.trim().replace(/\/+$/, '') : '';
 }
 
 /**
  * Formats a clean API URL with optional base URL.
+ * Automatically handles whether the base URL already includes an `/api` suffix
+ * to avoid duplicate `/api/api/...` paths.
  */
 export function apiUrl(endpoint: string): string {
   const base = getApiBaseUrl();
   const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
-  return base ? `${base}${cleanEndpoint}` : cleanEndpoint;
+
+  if (!base) return cleanEndpoint;
+
+  // Prevent duplicate /api if base URL already includes /api and endpoint starts with /api
+  if (base.endsWith('/api') && cleanEndpoint.startsWith('/api/')) {
+    return `${base}${cleanEndpoint.slice(4)}`;
+  }
+
+  return `${base}${cleanEndpoint}`;
 }
 
 function getHeaders(isJson = true): HeadersInit {
-  const headers: Record<string, string> = {};
+  const headers: Record<string, string> = {
+    Accept: 'application/json',
+  };
   if (isJson) {
     headers['Content-Type'] = 'application/json';
   }
@@ -60,9 +72,15 @@ function getHeaders(isJson = true): HeadersInit {
  * 4. Never blindly calls res.json() on HTML text, preventing "Unexpected token '<'" crashes.
  */
 async function safeFetchJson<T = any>(url: string, options: RequestInit = {}): Promise<T> {
+  // Ensure Accept header asks for application/json by default
+  const mergedHeaders: Record<string, string> = {
+    Accept: 'application/json',
+    ...(options.headers as Record<string, string> || {}),
+  };
+
   let res: Response;
   try {
-    res = await fetch(url, options);
+    res = await fetch(url, { ...options, headers: mergedHeaders });
   } catch (networkError: any) {
     const base = getApiBaseUrl();
     throw new Error(
@@ -72,8 +90,15 @@ async function safeFetchJson<T = any>(url: string, options: RequestInit = {}): P
     );
   }
 
+  // Handle 204 No Content without attempting to parse JSON
+  if (res.status === 204) {
+    return {} as T;
+  }
+
   const contentType = res.headers.get('content-type') || '';
-  const isJson = contentType.toLowerCase().includes('application/json');
+  const isJson =
+    contentType.toLowerCase().includes('application/json') ||
+    contentType.toLowerCase().includes('+json');
 
   if (!isJson) {
     const rawText = await res.text().catch(() => '');
