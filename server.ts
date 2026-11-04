@@ -27,6 +27,18 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = 3000;
 
+// CORS configuration for cross-origin frontend requests (Vercel, Render, Localhost)
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+  if (req.method === 'OPTIONS') {
+    res.status(204).end();
+    return;
+  }
+  next();
+});
+
 // Body parser
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
@@ -35,7 +47,7 @@ app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 // AUTHENTICATION ROUTES
 // --------------------------------------------------------
 
-app.post('/api/auth/register', (req: Request, res: Response): void => {
+app.post(['/api/auth/register', '/auth/register'], (req: Request, res: Response): void => {
   try {
     const { fullName, email, password, confirmPassword, preferredLanguage } = req.body;
 
@@ -87,12 +99,14 @@ app.post('/api/auth/register', (req: Request, res: Response): void => {
   }
 });
 
-app.post('/api/auth/login', (req: Request, res: Response): void => {
+app.post(['/api/auth/login', '/auth/login', '/auth/token'], (req: Request, res: Response): void => {
   try {
-    const { email, password } = req.body;
+    // Handle both JSON body (email/password or username/password for OAuth2/FastAPI standard)
+    const email = req.body.email || req.body.username;
+    const password = req.body.password;
 
     if (!email || !password) {
-      res.status(400).json({ error: 'Email and password are required.' });
+      res.status(400).json({ error: 'Email (or username) and password are required.' });
       return;
     }
 
@@ -117,14 +131,14 @@ app.post('/api/auth/login', (req: Request, res: Response): void => {
     };
 
     const token = signToken(safeUser);
-    res.json({ token, user: safeUser });
+    res.json({ token, user: safeUser, access_token: token, token_type: 'bearer' });
   } catch (err: any) {
     console.error('Login error:', err);
     res.status(500).json({ error: 'Login service failed. Please try again.' });
   }
 });
 
-app.get('/api/auth/me', authenticateToken, (req: AuthenticatedRequest, res: Response): void => {
+app.get(['/api/auth/me', '/auth/me'], authenticateToken, (req: AuthenticatedRequest, res: Response): void => {
   res.json({ user: req.user });
 });
 
@@ -433,6 +447,25 @@ app.post('/api/gemini/explain-scheme', async (req: Request, res: Response): Prom
   } catch (err) {
     res.status(500).json({ error: 'Failed to generate explanation.' });
   }
+});
+
+// --------------------------------------------------------
+// API 404 JSON HANDLER & GLOBAL ERROR MIDDLEWARE
+// --------------------------------------------------------
+
+app.all(['/api/*', '/auth/*'], (req: Request, res: Response): void => {
+  res.status(404).json({
+    error: `API endpoint not found: ${req.method} ${req.path}`,
+    detail: `No route matches ${req.method} ${req.path}. Check your request URL and HTTP method.`
+  });
+});
+
+app.use((err: any, _req: Request, res: Response, _next: express.NextFunction): void => {
+  console.error('Unhandled server error:', err);
+  res.status(err.status || 500).json({
+    error: err.message || 'Internal server error',
+    detail: err.detail || undefined
+  });
 });
 
 // --------------------------------------------------------
